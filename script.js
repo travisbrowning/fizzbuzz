@@ -3,7 +3,13 @@ let p = document.querySelector("p")
 
 
 for (i = 1; i <= num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i === num && i % 3 === 0 && i % 5 === 0) {
+        p.innerHTML += `FizzBuzz!`
+    } else if (i === num && i % 5 === 0) {
+        p.innerHTML += `Buzz!`
+    } else if (i === num && i % 3 === 0) {
+        p.innerHTML += `Fizz!`
+    } else if (i % 3 === 0 && i % 5 === 0) {
         p.innerHTML += `FizzBuzz, `
     } else if (i % 5 === 0) {
         p.innerHTML += `Buzz, `
